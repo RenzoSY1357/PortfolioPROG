@@ -1,0 +1,119 @@
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{/www/layout/base}">
+
+    <main layout:fragment="MainBase">
+        <!-- Contenedor general de contenido -->
+        <section class="contenido">
+
+
+
+            <!-- Sección de Credenciales (primera pestaña) -->
+            <section id="credenciales" class="tab-contenido">
+
+                <!-- Contenedor de tablas de formación y credenciales -->
+                <section class="educacion">
+
+                    <!-- Tabla de Estudios -->
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>E S T U D I O S</th>
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                        <!-- Primera formación académica -->
+                        <tr>
+                          <td class="HeadRow"><b><i>Grado Superior  (Actualmente en curso)</i></b></td>
+                        </tr>
+                        <tr>
+                          <td>Desarrollo Aplicaciones Web</td>
+                        </tr>
+                        <tr>
+                            <td>Instituto de Educación Superior Cura Valera</td>
+                        </tr>
+
+                        <!-- Segunda formación académica -->
+                        <tr>
+                            <td class="HeadRow"><b><i>Grado Superior</i></b></td>
+                        </tr>
+                        <tr>
+                            <td>Administracion y Finanzas</td>
+                        </tr>
+                        <tr>
+                            <td>Instituto de Educación Superior Alyanub</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!-- Tabla de Idiomas -->
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>I D I O M A S</th>
+                          </tr>
+                        </thead>
+                  
+                        <tbody>
+                          <tr>
+                            <td class="HeadRow"><b><i>Cambridge English C1</i></b></td>
+                          </tr>
+                          <tr>
+                            <td>Level 2 Certificate in ESOL International (Advanced)*.</td>
+                          </tr>
+                        </tbody>
+                    </table>  
+
+                    <!-- Tabla de Certificaciones Adicionales -->
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>M Á S</th>
+                          </tr>
+                        </thead>
+                  
+                        <tbody>
+                          <!-- Primera certificación -->
+                          <tr>
+                            <td class="HeadRow"><i><b>Certificado de Formación Manipulador de Alimentos</b></i></td>
+                          </tr>
+                          <tr>
+                            <td>Actividad: Comidas preparadas.</td>
+                          </tr>
+
+                          <!-- Segunda certificación -->
+                          <tr>
+                              <td class="HeadRow"><b><i>Certificado de Formación y prevención de riesgos laborales</i></b></td>
+                          </tr>
+                          <tr>
+                            <td>Nivel básico en el sector de hostelería</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+
+            </section>
+
+            <!-- Sección "Más" (segunda pestaña) -->
+            <section id="mas" class="tab-contenido" style="display:none;">
+
+                <!-- Contenedor de texto motivacional -->
+                <article id="Texto">
+
+                    <!-- Texto en inglés -->
+                    <p id="1"><i><b>I hope to provide a satisfactory service, while committing to the corporate vison and values, in exchange of personal and profesional fulfillment.</b></i><p><br>
+
+                    <!-- Texto en español -->
+                    <p id="2">Espero proveer un servicio gratificante, comprometiendome con la visión y valores corporativas, a cambio de satisfacción personal y profesional.<p>
+
+                </article>
+                    
+                <!-- Contenedor del video de YouTube -->
+                <section id="gatos">
+                    <!-- Video incrustado de YouTube -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0g1Q4fBDp2U?si=ti8mTL13zGiE4Es0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+
+            </section>
+        </section>
+    </main>

@@ -1,0 +1,92 @@
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{/www/layout/base}">
+
+<main layout:fragment="MainBase">
+
+     <!-- Sección de experiencia laboral -->
+  <section class="DescripcionMain">
+
+    <h2><i>E <span class="Reducir">X P E R I E N C I A</i></span></h2>
+
+    <h3>Atención al cliente y reponedor</h3>
+    <p><i>Geekshop | Julio 2022 - Septiembre 2022</i></p>
+    <ul>
+      <li>Atención y asesoramiento al cliente en aparatos de tecnología.</li>
+      <li>Gestión de productos.</li>
+    </ul>
+
+    <h3>Asistente administrativo</h3>
+    <p><i>ASAP Multiservices - Administradores de fincas | Marzo 2024 - Mayo 2024</i></p>
+    <ul>
+      <li>Gestión administrativa de comunidades de fincas.</li>
+      <li>Gestión de cobro.</li>
+      <li>Contabilizacion de cuentas.</li>
+      <li>Conciliacion bancaria y arqueo de caja.</li>
+      <li>Registro de facturas.</li>
+      <li>Elaboración de presupuestos.</li>
+      <li>Emisión de certificados y notas simples.</li>
+      <li>Atención al cliente vía presencial, telefónica, whatsapp y correo.</li>
+    </ul><br>
+
+    <h3>Coctelero / Camarero de barra</h3>
+    <p><i>Restaurante Escánez | Julio 2024 - Agosto 2024</i></p>
+    <ul>
+      <li>Confección y servicio de bebidas tanto alcohólicas como no alcohólicas.</li>
+      <li>Servicio de alimentos y control de la apariencia visual del mismo.</li>
+      <li>Gestión de las existencias de productos dentro del área.</li>
+      <li>Monitoreo de la limpieza del área, así como sus secciónes colidantes.</li>
+    </ul>
+  </section>
+
+  <!-- Sección lateral de cualidades y habilidades -->
+  <aside class="Cualidades">
+
+    <h2><i>CUALIDADES</i></h2>
+    <p>- - - - - - - - - - - - - - - - - - - - -</p>
+
+    <!-- Lista no ordenada de cualidades principales -->
+    <ol>
+      <li><i>Inglés avanzado, comunicación efectiva en diferentes entornos.</i></li>
+      <li><i>Alta aptitud comunicativa y cortesía.</i> </li>
+      <li><i>Eficaz habilidad organizativa.</i> </li>
+      <li><i>Clara redacción y escritura formal.</i></li>
+      <li><i>Agilidad y destreza en aplicaciones informáticas, incluyendo paquetes Office.</i> </li>
+    </ol>
+  </aside>
+
+  <!-- Sección de formulario de contacto -->
+  <section class="DescripcionFormulario">
+
+    <!-- Formulario para enviar mensaje -->
+    <form class="formulario">
+
+      <!-- Primera columna del formulario - título y área de texto -->
+      <div class="formularioParte1">
+
+        <h2><i>¿Quieres conocerme?</i></h2>
+
+        <!-- Área de texto para el mensaje -->
+        <label for="mensaje"></label>
+        <textarea rows="10" placeholder="Mándame un mensaje!!!" cols="40" id="mensaje"></textarea>
+
+      </div>
+
+      <!-- Segunda columna del formulario - campos y botón -->
+      <div class="formularioParte2">
+
+        <!-- Campo para el nombre -->
+        <label for ="Nombre"></label>
+        <input id="Nombre" type="text" placeholder="Dime tu Nombre" required>
+
+        <!-- Campo para el email -->
+        <label for ="Email"></label>
+        <input id="Email" type="email" placeholder="Introduce tu email" required>
+
+        <!-- Botón de envío -->
+        <button type="submit" id="Enviar"><b><i>Enviar</i></b></button>
+
+      </div>
+    </form>
+
+  </section>
+
+</main>

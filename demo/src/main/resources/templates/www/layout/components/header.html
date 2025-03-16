@@ -1,0 +1,107 @@
+<header th:fragment="headerbase">
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">R . S . Y</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/site}">Acerca de mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/SegundaPagina}">Conóceme más</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/pdf/CV.pdf}" download>Descargar CV</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Renzo Sanchez Yanulaque</h2>
+      <h3 class="text-body-secondary">New Junior Developer ~</h3>
+      <p class="lead"><i>Me gusta leer e informarme de diferentes materias con temáticas variadas, <b> valoro todo tipo de aprendizaje </b>, mi deseo es recibir la mayor educación posible que contribuya a mi desarrollo personal y profesional</i></p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" th:src="@{/images/Perfil.png}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></img>
+    </div>
+  </div>
+</div>
+
+
+
+
+</header>
+
+<header th:fragment="headerbase2">
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">R . S . Y</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/site}">Acerca de mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/SegundaPagina}">Conóceme más</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/pdf/CV.pdf}" download>Descargar CV</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+        <!-- Sistema de pestañas para navegación interna -->
+        <section class="tabs">
+
+            <!-- Botones de navegación entre secciones -->
+            <button id="CredencialesBT" onclick="showContent('credenciales')"><i><b>C R E D E N C I A L E S</b></i></button>
+
+            <button id="MasBT" onclick="showContent('mas')"><i><b>M Á S</b></i></button>
+
+        </section>
+
+        <!-- Slides - Presentación de diapositivas -->
+        <div class="slides">
+
+            <!-- Imágenes del carrusel -->
+            <img class="cover-photo" th:src="@{images/Cover.jpg}" style="width:100%">
+            <img class="cover-photo" th:src="@{images/Cover2.jpg}" style="width:100%">
+            <img class="cover-photo" th:src="@{images/Cover3.jpg}" style="width:100%">              
+
+            <!-- Botones de navegación del carrusel -->
+            <button class="boton-slides izquierda" onclick="plusDivs(-1)">&#10094;</button>
+
+            <button class="boton-slides derecha" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <!-- Fin de Slides -->
+</header>
